@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color on Mouseover</title>
+    <style>
+        /* CSS styling for the box */
+        #colorBox {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML content with a box element -->
+    <div id="colorBox"></div>
+
+    <!-- JavaScript code to handle color change -->
+    <script>
+        // Get the element
+        const colorBox = document.getElementById('colorBox');
+
+        // Add event listener for mouseover
+        colorBox.addEventListener('mouseover', function() {
+            colorBox.style.backgroundColor = 'yellow';
+        });
+
+        // Add event listener for mouseout
+        colorBox.addEventListener('mouseout', function() {
+            colorBox.style.backgroundColor = 'blue';
+        });
+    </script>
+</body>
+</html>
